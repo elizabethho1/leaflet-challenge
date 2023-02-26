@@ -1,7 +1,7 @@
 
 
 // Adding the tile layer
-var street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var tile = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
@@ -41,10 +41,10 @@ console.log(mags);
   // Create our map, giving it the street and earthquakes layers to display on load.
   var myMap = L.map("map", {
     center: [
-      37.09, -95.71
+      41, 35
     ],
     zoom: 5,
-    layers: [street, earthquakes]
+    layers: [tile, earthquakes]
   });
 
 
